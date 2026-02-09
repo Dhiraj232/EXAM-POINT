@@ -1,4 +1,4 @@
-:root {
+ :root {
   --primary: #5b4bdb;
   --text: #1a1a1a;
   --border: #e6e6e6;
@@ -15,7 +15,7 @@ body {
   background: #ffffff;
 }
 
-/* Navbar */
+
 .navbar {
   border-bottom: 1px solid var(--border);
 }
@@ -31,15 +31,13 @@ body {
 
 /* Logo */
 .logo {
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  border: 2px solid #000;
+  /* width: 62px;
+  height: 62px; */
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 700;
-  font-size: 18px;
+  font-weight: 900;
+  font-size: 28px;
 }
 
 /* Nav Links */
@@ -72,6 +70,7 @@ body {
   align-items: center;
   gap: 6px;
 }
+
 
 .arrow {
   font-size: 12px;
@@ -143,6 +142,15 @@ body {
   font-size: 16px;
   color: #444;
   max-width: 520px;
+}
+.btng{
+  width: 105px;
+  height:45px;
+  background-color: #537cd6;
+  /* border:2px solid; */
+  border-radius: 7px;
+  font-size: 15px;
+  color: white;
 }
 
 .hero-btn {
@@ -243,6 +251,25 @@ body {
   background: #ffffff;
 }
 
+.icon.live::before {
+  content: "📹";
+  font-size: 27px;
+}
+
+.icon.test::before {
+  content: "📝";
+  font-size: 27px;
+}
+
+.icon.doubt::before {
+  content: "❓";
+  font-size: 27px;
+}
+
+.icon.center::before {
+  content: "🎓";
+  font-size: 27px;
+}
 .exam-container {
   max-width: 1200px;
   margin: auto;
@@ -498,3 +525,46 @@ body {
   font-size: 13px;
   color: #666;
 }
+
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.overlay.show {
+  opacity: 1;
+}
+
+/* Bottom small popup */
+.modal {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 420px;
+  background: #fff;
+  border-radius: 18px 18px 0 0;
+  padding: 25px;
+}
+
+/* Close */
+.close {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Logo */
+.logo-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+

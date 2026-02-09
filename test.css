@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f6f7fb;
+  padding: 30px;
+}
+
+/* GRID: 3 cards per row */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+/* CARD */
+.ts-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+.ts-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.ts-head h3 {
+  font-size: 15px;
+}
+
+.new {
+  background: #ffdd00;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+/* BANNER */
+.ts-banner {
+  border-radius: 12px;
+  padding: 14px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.ts-banner h2 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.ts-banner img {
+  width: 100%;
+  max-height: 120px;
+  object-fit: contain;
+}
+
+.total {
+  display: inline-block;
+  margin-top: 6px;
+  background: #111;
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+/* COLORS */
+.pink { background: #ffe1e6; color:#a8003a; }
+.green { background: #d9ffec; color:#006b3c; }
+
+/* FEATURES */
+.features {
+  list-style: none;
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+.features li {
+  margin-bottom: 6px;
+  padding-left: 22px;
+  position: relative;
+}
+
+.features li::before {
+  content: "⭐";
+  position: absolute;
+  left: 0;
+}
+
+/* PRICE */
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.price span {
+  font-size: 14px;
+  text-decoration: line-through;
+  color: #888;
+  margin-left: 6px;
+}
+
+/* BUTTONS */
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.outline {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #5b50e6;
+  background: transparent;
+  color: #5b50e6;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.fill {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: #5b50e6;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .cards { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .cards { grid-template-columns: 1fr; }
+}

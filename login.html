@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>OTP Bottom Sheet</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<!-- Overlay -->
+<div class="overlay show"></div>
+
+<!-- Bottom popup (auto open) -->
+<div class="modal show">
+
+  <span class="close" onclick="closeModal()">✕</span>
+
+  <div class="logo-box">
+    <div class="logo">EXAMPOINT</div>
+  </div>
+
+  <h2>Please enter your Mobile Number</h2>
+
+  <div class="input-box">
+    <select>
+      <option>IN +91</option>
+    </select>
+    <input type="tel" placeholder="Eg 9525412843">
+  </div>
+
+  <button class="btn" disabled>Get OTP</button>
+
+  <p class="terms">
+    By continuing you agree to our
+    <a href="#">Terms of use</a> &
+    <a href="#">Privacy Policy</a>
+  </p>
+
+</div>
+
+</body>
+</html>
