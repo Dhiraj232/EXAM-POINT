@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f6f7fb;
+  color: #111;
+}
+
+.page {
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px;
+}
+
+/* Header */
+.top {
+  margin-bottom: 25px;
+}
+
+.back {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.top h1 {
+  font-size: 32px;
+}
+
+/* Layout */
+.layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 25px;
+}
+
+/* Cards */
+.card, .box {
+  background: #fff;
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+/* Items in cart */
+.card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.switch {
+  background: #f1efff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  color: #5b50e6;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cart-item {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.thumb {
+  position: relative;
+  width: 140px;
+  background: #e7f6ee;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.thumb img {
+  width: 100%;
+}
+
+.label {
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  background: #5b50e6;
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.details h3 {
+  margin-bottom: 8px;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.price span {
+  font-size: 14px;
+  color: #888;
+  text-decoration: line-through;
+  margin-left: 8px;
+}
+
+/* Right side */
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.apply {
+  color: #a5a3f6;
+  font-weight: 600;
+}
+
+.muted {
+  font-size: 13px;
+  color: #777;
+  margin: 6px 0;
+}
+
+.link {
+  color: #5b50e6;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Donate */
+.donate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.donate-right {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Summary */
+.summary div {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.green {
+  color: green;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #eee;
+  padding-top: 12px;
+  margin-top: 12px;
+  font-size: 18px;
+}
+
+/* Button */
+.pay {
+  width: 100%;
+  margin-top: 15px;
+  padding: 14px;
+  border: none;
+  background: #5b50e6;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
