@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* FULL SCREEN */
+body {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #eaf6ff, #dff0ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* MAIN CONTAINER */
+.sell-container {
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* TITLE */
+.sell-container h1 {
+  font-size: 36px;
+  color: #1e88ff;
+  margin-bottom: 8px;
+}
+
+.line {
+  width: 40px;
+  height: 4px;
+  background: #1e88ff;
+  margin: 0 auto 35px;
+  border-radius: 5px;
+}
+
+/* STEP CARD */
+.step {
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px;
+  margin-bottom: 30px;
+  border: 2px dashed #1e88ff;
+  display: flex;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+  animation: fadeUp 0.7s ease forwards;
+}
+
+/* ICON */
+.icon {
+  width: 70px;
+  height: 70px;
+  background: #eaf4ff;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: #1e88ff;
+  flex-shrink: 0;
+}
+
+/* CONTENT */
+.step-content {
+  text-align: left;
+  margin-left: 20px;
+}
+
+.step-content h2 {
+  font-size: 22px;
+  color: #0d3b66;
+  margin-bottom: 6px;
+}
+
+.step-content p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* STEP NUMBER */
+.step-number {
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 72px;
+  color: rgba(30,136,255,0.12);
+  font-weight: bold;
+}
+
+/* ANIMATION */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .step {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .step-content {
+    margin: 15px 0 0;
+    text-align: center;
+  }
+
+  .step-number {
+    right: 15px;
+    font-size: 60px;
+  }
+}
